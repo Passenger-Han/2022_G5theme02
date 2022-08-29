@@ -1,0 +1,3 @@
+'use strict';
+
+// MAINPAGE SWIPER VARIABLES
