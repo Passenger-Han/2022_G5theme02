@@ -16,7 +16,7 @@ include_once(G5_THEME_PATH.'/head.php');
 ?>
 
 <div class="container-fluid p-0" id="mainpage-visual">
-    <div class="visual d-flex align-items-center position-relative">
+    <div class="visual position-relative">
         <video src="<?php echo G5_THEME_IMG_URL ?>/visual01.mp4" class="position-absolute" autoplay muted loop></video>
     </div>
 </div>

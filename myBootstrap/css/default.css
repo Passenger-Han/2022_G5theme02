@@ -330,5 +330,5 @@ box-sizing:content-box;
 .login-wrapper span.rounded {background: url(../img/gnb_bg.gif), #A7A0C477; background-repeat: no-repeat; background-position: center; width: 28px; height: 28px;}
 
 /* MAINPAGE -visual */
-#mainpage-visual .visual {height: 700px; overflow: hidden;}
-#mainpage-visual .visual video {width: 100vw; display: block;}
+#mainpage-visual .visual {width: 100%; padding-top: 36%; overflow: hidden;}
+#mainpage-visual .visual video {width: 100%; display: block; top: 50%; transform: translateY(-50%);}
