@@ -332,3 +332,23 @@ box-sizing:content-box;
 /* MAINPAGE -visual */
 #mainpage-visual .visual {width: 100%; padding-top: 36%; overflow: hidden;}
 #mainpage-visual .visual video {width: 100%; display: block; top: 50%; transform: translateY(-50%);}
+
+/* MAINPAGE -section-1st */
+#section-1st .row {padding-bottom: 5rem;}
+#section-1st .col-md-7 .car {left: 0; bottom: -90px; _transform: translate(-12px, 12px);}
+#section-1st .col-md-7 .car img:first-child {transform: translate(-12px, 12px); border-radius: 1.5rem; box-shadow: 8px 8px 16px #0000003A;}
+#section-1st .col-md-7 .car img:last-child {width: fit-content;}
+
+/* MAINPAGE -section-2nd */
+#section-2nd .wrapper {background-color: #CEF5F5; background-image: url(../img/section_2nd_visualBg.png); background-position: center; border-radius: 3rem;}
+#section-2nd .image img {width: 85%;}
+
+/* MAINPAGE -section-3rd */
+#section-3rd .image .position-relative {width: fit-content;}
+#section-3rd .image img.position-absolute {
+  left: 60%; top: 42%;
+  animation: dartboard 18s infinite linear;
+}
+@keyframes dartboard {
+  100% {transform: rotate(360deg);}
+}
