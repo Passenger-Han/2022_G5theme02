@@ -333,6 +333,14 @@ box-sizing:content-box;
 #mainpage-visual .visual {width: 100%; padding-top: 36%; overflow: hidden;}
 #mainpage-visual .visual video {width: 100%; display: block; top: 50%; transform: translateY(-50%);}
 
+/* MAINPAGE -sections general */
+#section-1st .text,
+#section-2nd .text,
+#section-3rd .text,
+#section-4th .text,
+#section-5th .text,
+#section-6th .text {width: fit-content;}
+
 /* MAINPAGE -section-1st */
 #section-1st .row {padding-bottom: 5rem;}
 #section-1st .col-md-7 .car {left: 0; bottom: -90px; _transform: translate(-12px, 12px);}
@@ -361,4 +369,20 @@ box-sizing:content-box;
 /* MAINPAGE -section-6th */
 #section-6th .list ul {flex-wrap: wrap;}
 #section-6th .list ul li {flex-grow: 1; flex-basis: 20%;}
+#section-6th .list ul li i.sprite {width: 32px; height: 32px; background-repeat: no-repeat; background-position: 0 0;}
+#section-6th .list ul li:hover i.sprite {background-position: 0 32px;}
 #section-6th .list ul li .hover {display: none;}
+#section-6th .list ul li:hover .hover {display: block;}
+
+/* MAINPAGE -section-latest */
+#section-latest .lat_title {text-align: center; font-size: 1.5rem; font-weight: bold;}
+#section-latest .lt_img img {width: 100%;}
+
+/* MAINPAGE -section-review */
+#section-review {background-color: #E4FAF6;}
+#section-review .lt_img img {width: 100%;}
+
+/* FOOTER */
+footer hr {display: block;}
+footer .footer-upper .row > div a {color: #FFFFFF;}
+footer .footer-lower .icons img {width: 40px;}
