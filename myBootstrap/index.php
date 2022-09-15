@@ -86,130 +86,136 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <div id="section-5th" class="container">
     <div class="row">
-        <div class="image col col-md-6">
+        <div class="image col col-md-6 ms-auto">
             <div class="position-relative">
                 <img src="<?php echo G5_THEME_IMG_URL ?>/section_5th_visual01.png" alt="">
             </div>
         </div>
-        <div class="text col col-md-6 d-flex flex-column justify-content-center">
-            <h2 class="fw-bolder fs-1 mb-4">Main Class 자신감 <span class="text-success">UP</span><br>예습도<img class="align-middle" src="<?php echo G5_THEME_IMG_URL ?>/online.png" alt="">복습도<img class="align-middle" src="<?php echo G5_THEME_IMG_URL ?>/online.png" alt=""><br>특별한 학습시스템</h2>
+        <div class="text col col-md-6 d-flex flex-column justify-content-center ms-1 me-auto">
+            <h2 class="fw-bolder fs-1 mb-4">Main Class 자신감 <span class="text-success">UP</span><br>예습도<img class="align-middle" src="<?php echo G5_THEME_IMG_URL ?>/online.png" alt=""> 복습도<img class="align-middle" src="<?php echo G5_THEME_IMG_URL ?>/online.png" alt=""> <br>특별한 학습시스템</h2>
             <p class="fs-5">본 수업 전/후 예복습 시스템과 숙제로 효과적인 확인학습을<br>진행합니다. 혼자서도 척척! 자기주도 학습이 가능합니다.</p>
         </div>
     </div>
 </div>
 
 <div id="section-6th" class="container">
-    <div class="text">
-        <h2 class="fw-bolder fs-1 mb-4">YBM 레몬만의 밀착 학습관리</h2>
-        <p class="fs-5">체계적인 관리를 통해 우리 아이의 학습효과를 극대화 합니다.</p>
+    <div class="text mx-auto mb-5">
+        <h2 class="fw-bolder text-center fs-1 mb-4">YBM 레몬만의 밀착 학습관리</h2>
+        <p class="text-center fs-5">체계적인 관리를 통해 우리 아이의 학습효과를 극대화 합니다.</p>
     </div>
-    <div class="image">
-        <img src="<?php echo G5_THEME_IMG_URL ?>/section_6th_visual01.png" alt="">
+    <div class="image mb-5">
+        <img class="mx-auto d-block" src="<?php echo G5_THEME_IMG_URL ?>/section_6th_visual01.png" alt="">
     </div>
 
-    <div class="list p-3">
-        <ul class="d-flex gap-4">
-            <li class="p-4 shadow rounded">
-                <div class="frontalText d-flex gap-3">
+
+        <div class="row upper g-2 mb-3">
+            <div class="col-12 col-lg-3">
+                <div class="frontalText px-3 py-4 d-flex gap-3 shadow rounded">
                     <i class="sprite d-block" style="background-image: url(<?php echo G5_THEME_IMG_URL ?>/sprite_report.png);"></i>
                     <div class="description">
                         <h5>학습 결과 보고서</h5>
                         <p>Daily Class Report</p>
                     </div>
+                    <div class="hover rounded p-4">
+                        <p>학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
+                    </div>
                 </div>
-                <div class="hover">
-                    <p>학습자의 학업 점수와 학습내용을 요약한 보고서를 발송합니다.</p>
-                </div>
-            </li>
-            <li class="p-4 shadow rounded">
-                <div class="frontalText d-flex gap-3">
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="frontalText px-3 py-4 d-flex gap-3 shadow rounded">
                     <i class="sprite d-block" style="background-image: url(<?php echo G5_THEME_IMG_URL ?>/sprite_achievement.png);"></i>
                     <div class="description">
                         <h5>성취도 테스트</h5>
                         <p>Achievement Test</p>
                     </div>
+                    <div class="hover rounded p-4">
+                        <p>3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
+                    </div>
                 </div>
-                <div class="hover">
-                    <p>3개월에 한번씩 학습자의 성취도를 평가하여 피드백을 제공합니다.</p>
-                </div>
-            </li>
-            <li class="p-4 shadow rounded">
-                <div class="frontalText d-flex gap-3">
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="frontalText px-3 py-4 d-flex gap-3 shadow rounded">
                     <i class="sprite d-block" style="background-image: url(<?php echo G5_THEME_IMG_URL ?>/sprite_solution.png);"></i>
                     <div class="description">
                         <h5>화상솔루션</h5>
                         <p>Online Learning Solutions</p>
                     </div>
+                    <div class="hover rounded p-4">
+                        <p>YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
+                    </div>
                 </div>
-                <div class="hover">
-                    <p>YBM에서 직접 개발한 화상솔루션과 교안으로 수업을 진행합니다.</p>
-                </div>
-            </li>
-            <li class="p-4 shadow rounded">
-                <div class="frontalText d-flex gap-3">
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="frontalText px-3 py-4 d-flex gap-3 shadow rounded">
                     <i class="sprite d-block" style="background-image: url(<?php echo G5_THEME_IMG_URL ?>/sprite_homework.png);"></i>
                     <div class="description">
                         <h5>온·오프라인 숙제관리</h5>
                         <p>Homework</p>
                     </div>
+                    <div class="hover rounded p-4">
+                        <p>수업 후 온라인ㆍ오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
+                    </div>
                 </div>
-                <div class="hover">
-                    <p>수업 후 온라인ㆍ오프라인 숙제를 진행하여 학습 효과를 높입니다.</p>
-                </div>
-            </li>
-            <li class="p-4 shadow rounded">
-                <div class="frontalText d-flex gap-3">
+            </div>
+        </div>
+
+    
+
+        <div class="row g-2 mb-3">
+            <div class="col-12 col-lg-3">
+                <div class="frontalText px-3 py-4 d-flex gap-3 shadow rounded">
                     <i class="sprite d-block" style="background-image: url(<?php echo G5_THEME_IMG_URL ?>/sprite_attendance.png);"></i>
                     <div class="description">
                         <h5>출결관리</h5>
                         <p>Attendance</p>
                     </div>
+                    <div class="hover rounded p-4">
+                        <p>학습자의 출결 상황을 한 눈에 파악할 수 있습니다.</p>
+                    </div>
                 </div>
-                <div class="hover">
-                    <p>학습자의 출결 상황을 한 눈에 파악할 수 있습니다.</p>
-                </div>
-            </li>
-            <li class="p-4 shadow rounded">
-                <div class="frontalText d-flex gap-3">
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="frontalText px-3 py-4 d-flex gap-3 shadow rounded">
                     <i class="sprite d-block" style="background-image: url(<?php echo G5_THEME_IMG_URL ?>/sprite_consult.png);"></i>
                     <div class="description">
                         <h5>정기상담관리</h5>
                         <p>Regular Consulting</p>
                     </div>
+                    <div class="hover rounded p-4">
+                        <p>학부모 정기 상담을 통해 아이의 학습 성취를 관리하고 학습 목표를 달성하도록 합니다.</p>
+                    </div>
                 </div>
-                <div class="hover">
-                    <p>학부모 정기 상담을 통해 아이의 학습 성취를 관리하고 학습 목표를 달성하도록 합니다.</p>
-                </div>
-            </li>
-            <li class="p-4 shadow rounded">
-                <div class="frontalText d-flex gap-3">
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="frontalText px-3 py-4 d-flex gap-3 shadow rounded">
                     <i class="sprite d-block" style="background-image: url(<?php echo G5_THEME_IMG_URL ?>/sprite_notification.png);"></i>
                     <div class="description">
                         <h5>모바일 알림</h5>
                         <p>Notification</p>
                     </div>
+                    <div class="hover rounded p-4">
+                        <p>Mobile에서 아이의 학습현황을 실시간으로 조회하고 알림을 받습니다.</p>
+                    </div>
                 </div>
-                <div class="hover">
-                    <p>Mobile에서 아이의 학습현황을 실시간으로 조회하고 알림을 받습니다.</p>
-                </div>
-            </li>
-            <li class="p-4 shadow rounded">
-                <div class="frontalText d-flex gap-3">
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="frontalText px-3 py-4 d-flex gap-3 shadow rounded">
                     <i class="sprite d-block" style="background-image: url(<?php echo G5_THEME_IMG_URL ?>/sprite_reward.png);"></i>
                     <div class="description">
                         <h5>포인트 제도</h5>
                         <p>Reward System</p>
                     </div>
+                    <div class="hover rounded p-4">
+                        <p>학습 보상으로 지급되는 Point는 학습 동기를 부여합니다.</p>
+                    </div>
                 </div>
-                <div class="hover">
-                    <p>학습 보상으로 지급되는 Point는 학습 동기를 부여합니다.</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-</div>
+            </div>
+        </div>
 
-<div id="section-latest" class="container">
+        
+    </div>
+    
+<div id="section-latest" class="container my-5">
     <?php echo latest('theme/pic_basic', 'gallery', 8, 23); ?>
 </div>
 <script>
@@ -218,7 +224,7 @@ include_once(G5_THEME_PATH.'/head.php');
     });
 </script>
 
-<div id="section-review">
+<div id="section-review" class="py-5">
     <div class="container px-5">
         <?php echo latest('theme/pic_board', 'free', 3, 23); ?>
     </div>

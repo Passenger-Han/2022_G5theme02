@@ -365,14 +365,22 @@ box-sizing:content-box;
 #section-4th .wrapper {background-color: #CEF5F5; background-image: url(../img/section_4th_visualBg.png); background-position: center; border-radius: 3rem;}
 
 /* MAINPAGE -section-5th */
+#section-5th .align-middle {transform: translateY(-5px);}
 
 /* MAINPAGE -section-6th */
-#section-6th .list ul {flex-wrap: wrap;}
-#section-6th .list ul li {flex-grow: 1; flex-basis: 20%;}
-#section-6th .list ul li i.sprite {width: 32px; height: 32px; background-repeat: no-repeat; background-position: 0 0;}
-#section-6th .list ul li:hover i.sprite {background-position: 0 32px;}
-#section-6th .list ul li .hover {display: none;}
-#section-6th .list ul li:hover .hover {display: block;}
+
+/* #section-6th .row ul {flex-wrap: wrap;} */
+/* #section-6th .row ul li {flex-grow: 1; flex-basis: 20%;} */
+/* #section-6th .row {flex-wrap: nowrap;} */
+#section-6th .row.upper {position: relative; z-index: 10;}
+/* #section-6th .row > div {flex-shrink: 1;} */
+#section-6th .row > div,
+#section-6th .row > div .frontalText {position: relative;}
+#section-6th .row > div i.sprite {width: 32px; height: 32px; background-repeat: no-repeat; background-position: 0 0;}
+#section-6th .row > div:hover i.sprite {background-position: 0 -32px;}
+#section-6th .row > div .hover {visibility: hidden; opacity: 0; width: 100%; left:0; top: 80%; transition: 0.3s; background-color: #00B388; position:absolute;}
+#section-6th .row > div:hover .frontalText {background-color: #008062;}
+#section-6th .row > div:hover .hover {visibility: visible; opacity: 1; top: 96%;}
 
 /* MAINPAGE -section-latest */
 #section-latest .lat_title {text-align: center; font-size: 1.5rem; font-weight: bold;}

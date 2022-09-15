@@ -8,7 +8,7 @@ $thumb_width = 210;
 $thumb_height = 150;
 ?>
 
-<div class="pic_lt">
+<div class="pic_lt2">
     <h2 class="lat_title"><a href="<?php echo get_pretty_url($bo_table); ?>"><?php echo $bo_subject ?></a></h2>
 
     <div class="swiper">
