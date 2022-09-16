@@ -15,16 +15,16 @@ if(G5_COMMUNITY_USE === false) {
 <!-- 하단 시작 { -->
 <footer>
     <div class="footer-upper bg-secondary">
-        <div class="container py-5 text-white">
-            <div class="row">
-                <div class="col-2">
+        <div class="container pt-5 py-4 text-white">
+            <div class="row fs-6">
+                <div class="col-6 col-lg-4 col-xl-2 mb-4">
                     <a href="javascript:void(0);">YBM Lemon 스토리</a>
                     <hr>
                     <ul>
                         <li><a href="#!">상담신청</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-lg-4 col-xl-2 mb-4">
                     <a href="javascript:void(0);">수강신청</a>
                     <hr>
                     <ul>
@@ -34,7 +34,7 @@ if(G5_COMMUNITY_USE === false) {
                         <li><a href="#!">무료체험&레벨테스트 신청확인</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-lg-4 col-xl-2 mb-4">
                     <a href="javascript:void(0);">커뮤니티</a>
                     <hr>
                     <ul>
@@ -43,7 +43,7 @@ if(G5_COMMUNITY_USE === false) {
                         <li><a href="#!">이벤트</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-lg-4 col-xl-2 mb-4">
                     <a href="javascript:void(0);">마이클래스</a>
                     <hr>
                     <ul>
@@ -55,7 +55,7 @@ if(G5_COMMUNITY_USE === false) {
                         <li><a href="#!">정회원 공지사항</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-lg-4 col-xl-2 mb-4">
                     <a href="javascript:void(0);">My Lemon</a>
                     <hr>
                     <ul>
@@ -68,7 +68,7 @@ if(G5_COMMUNITY_USE === false) {
                         <li><a href="#!">상담신청내역</a></li>
                     </ul>
                 </div>
-                <div class="col-2">
+                <div class="col-6 col-lg-4 col-xl-2 mb-4">
                     <a href="javascript:void(0);">고객센터</a>
                     <hr>
                     <ul>
@@ -82,13 +82,13 @@ if(G5_COMMUNITY_USE === false) {
         </div>
     </div>
 
-    <div class="footer-lower pt-3 pb-5 bg-dark">
-        <div class="container d-flex justify-content-between">
-            <ul class="links d-flex gap-3 align-items-center">
-                <li><a class="text-white-50 fw-semibold fs-6" href="#!">로그인</a></li>
-                <li><a class="text-white-50 fw-semibold fs-6" href="#!">이용약관</a></li>
-                <li><a class="text-white-50 fw-semibold fs-6" href="#!">개인정보처리방침</a></li>
-                <li><a class="text-white-50 fw-semibold fs-6" href="#!">영상정보처리기기 운영관리방침</a></li>
+    <div class="footer-lower pt-3 pb-4 bg-dark">
+        <div class="container d-flex gap-2 flex-column flex-sm-row align-items-center justify-content-center justify-content-sm-between">
+            <ul class="links d-flex gap-2 align-items-center">
+                <li><a class="text-white-50 fw-semibold" href="#!">로그인</a></li>
+                <li><a class="text-white-50 fw-semibold" href="#!">이용약관</a></li>
+                <li><a class="text-white-50 fw-semibold" href="#!">개인정보처리방침</a></li>
+                <li><a class="text-white-50 fw-semibold" href="#!">영상정보처리기기 운영관리방침</a></li>
             </ul>
 
             <ul class="icons d-flex gap-2 align-items-center">
@@ -98,14 +98,20 @@ if(G5_COMMUNITY_USE === false) {
             </ul>
         </div>
 
-        <hr>
+        <hr class="text-secondary">
         <div class="container text-secondary">
-            <p><span class="fw-semibold text-white-50">사업자등록번호</span>: 000-00-00000</p>
-            <p><span class="fw-semibold text-white-50">대표이사</span>: 화찬권</p>
-            <p><span class="fw-semibold text-white-50">통신판매업신고번호</span>: 제 00-000호</p>
-            <p><span class="fw-semibold text-white-50">TEL</span>: 0000-0000</p>
-            <p><span class="fw-semibold text-white-50">FAX</span>: 00-0000-0000</p>
-            <p><span class="fw-semibold text-white-50">E-mail</span>: abcde@fgi.jk.lm</p>
+            <div class="row">
+                <div class="col-4">
+                    <p><span class="fw-semibold text-white-50">사업자등록번호</span>: 000-00-00000</p>
+                    <p><span class="fw-semibold text-white-50">대표이사</span>: 대표자</p>
+                    <p><span class="fw-semibold text-white-50">통신판매업신고번호</span>: 제 00-000호</p>
+                </div>
+                <div class="col-4 me-auto">
+                    <p><span class="fw-semibold text-white-50">TEL</span>: 0000-0000</p>
+                    <p><span class="fw-semibold text-white-50">FAX</span>: 00-0000-0000</p>
+                    <p><span class="fw-semibold text-white-50">E-mail</span>: abcde@fgi.jk.lm</p>
+                </div>
+            </div>
             <p><span class="fw-semibold text-white-50">서울특별시 서울 서울 0000-0 서울</span></p>
         </div>
     </div>

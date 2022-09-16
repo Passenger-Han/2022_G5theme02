@@ -28,7 +28,9 @@ $thumb_height = 150;
             $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
             ?>
                 <li class="swiper-slide">
+                    
                     <a href="<?php echo $list[$i]['href'] ?>" class="lt_img"><?php echo $img_content; ?></a>
+                    <div class="lt_wrapper">
                     <?php
                     if ($list[$i]['icon_secret']) echo "<i class=\"fa fa-lock\" aria-hidden=\"true\"></i><span class=\"sound_only\">비밀글</span> ";
 
@@ -38,7 +40,7 @@ $thumb_height = 150;
 
         
                     echo "<p>";
-                    echo "<a href=\"".$list[$i]['href']."\"> ";
+                    echo "<a class='lt_name' href=\"".$list[$i]['href']."\"> ";
                     if ($list[$i]['is_notice'])
                     echo "<strong>".$list[$i]['subject']."</strong>";
                     else
@@ -48,6 +50,8 @@ $thumb_height = 150;
                     
                     echo "</a>";
                     echo "</p>";
+
+                    echo "<hr>";
 
                     // if ($list[$i]['link']['count']) { echo "[{$list[$i]['link']['count']}]"; }
                     // if ($list[$i]['file']['count']) { echo "<{$list[$i]['file']['count']}>"; }
@@ -61,11 +65,12 @@ $thumb_height = 150;
 
                     ?>
 
-                    <p>
-                        <?php echo get_text(cut_str(strip_tags($list[$i]['wr_content']),80)); ?>
+                    <p class="lt_content">
+                        <?php echo get_text(cut_str(strip_tags($list[$i]['wr_content']), 160)); ?>
                     </p>
 
                     <span class="lt_date"><?php echo $list[$i]['datetime2'] ?></span>
+                    </div>
                 </li>
 
             <?php }  ?>

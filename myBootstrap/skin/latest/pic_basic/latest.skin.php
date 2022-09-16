@@ -29,6 +29,7 @@ $thumb_height = 150;
             ?>
                 <li class="swiper-slide">
                     <a href="<?php echo $list[$i]['href'] ?>" class="lt_img"><?php echo $img_content; ?></a>
+                    <div class="lt_wrapper">
                     <?php
                     if ($list[$i]['icon_secret']) echo "<i class=\"fa fa-lock\" aria-hidden=\"true\"></i><span class=\"sound_only\">비밀글</span> ";
 
@@ -37,7 +38,7 @@ $thumb_height = 150;
                     // if ($list[$i]['icon_hot']) echo "<span class=\"hot_icon\">H<span class=\"sound_only\">인기글</span></span>";
 
                     echo "<p>";
-                    echo "<a href=\"".$list[$i]['href']."\"> ";
+                    echo "<a class='lt_name' href=\"".$list[$i]['href']."\"> ";
                     if ($list[$i]['is_notice'])
                         echo "<strong>".$list[$i]['subject']."</strong>";
                     else
@@ -61,6 +62,7 @@ $thumb_height = 150;
                     ?>
 
                     <span class="lt_date"><?php echo $list[$i]['datetime2'] ?></span>
+                    </div>
                 </li>
 
             <?php }  ?>

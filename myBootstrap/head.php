@@ -34,9 +34,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     </div>
 </div>
 연습사이트입니다! 원래 사이트와 무관합니다!
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="<?php echo G5_THEME_IMG_URL ?>/LOGO.svg" alt="LOGO" style="width: 180px;"></a>
+        <a class="navbar-brand" href="./"><img src="<?php echo G5_THEME_IMG_URL ?>/LOGO.svg" alt="LOGO" style="width: 180px;"></a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,15 +61,40 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 foreach( $menu_datas as $row ){
                     if( empty($row) ) continue;
                 ?>
-                <li class="nav-item fw-bold">
-                    <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="nav-link"><?php echo $row['me_name'] ?></a>
+                <li class="nav-item dropdown fw-bold fs-6">
+                    <a href="<?php echo $row['me_link']; ?>" id="navbarDropdownMenuLink" role="button" aria-expanded="false" target="_<?php echo $row['me_target']; ?>" class="nav-link" data-bs-toggle="dropdown"><?php echo $row['me_name'] ?></a>
+                    
+                    <?php
+                        $k = 0;
+                        foreach( (array) $row['sub'] as $row2 ){
+
+                            if( empty($row2) ) continue; 
+
+                            if($k == 0)
+                                echo '<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">'.PHP_EOL;
+                        ?>
+
+                            <li >
+                                <a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"  class="dropdown-item">
+                                    <?php echo $row2['me_name'] ?>
+                                </a>
+                            </li>
+
+                        <?php
+                        $k++;
+                        }   //end foreach $row2
+
+                        if($k > 0)
+                            echo '</ul>'.PHP_EOL;
+                        ?>
+
                 </li>
                 <?php $i++; ?>
                 <?php } //end foreach $row ?>
             </ul>
         </div>
 
-        <div class="login-wrapper">
+        <div class="login-wrapper d-none d-md-block">
             <a href="javascript:void(0);" class="d-flex align-items-center">
                 <img src="<?php echo G5_THEME_IMG_URL ?>/NotLoggedIn.svg" alt="anonymous" class="me-2" style="width: 40px;">
                 <span class="fw-semibold me-4">로그인하기</span>
